@@ -69,22 +69,20 @@ p {
     margin: 0 auto;
 }
 
-.footnote {
-    width: 100%;
-    padding: 10px;
-    display: inline-block;
-    padding-top: 700px;
-    padding-bottom: 40px;
-    text-align: center;
-}
-
 .menu {
     max-width: 50px;
     padding: 10px;
     position: fixed;
     line-height: .75em;
-    font-size: .9em;
+    font-size: 90%;
     color: #8e8a8a;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 400px;
+    padding-bottom: 300px;
 }
 
 /** index page photo */
@@ -111,6 +109,26 @@ p {
     padding-bottom: 50%;
     padding-left: 30%;
     padding-right: 30%;
+}
+
+.arrow {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fa {
+    size: 120%;
+}
+
+.footnote {
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 80%;
+    color: gray;
 }
 
 /** Images are allowed to be a little wider when broken out into their own container */
@@ -181,14 +199,35 @@ figcaption {
         float: right;
     }
     */
+    .footnote {
+        width: 100%;
+        padding: 10px;
+        display: inline-block;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+        font-size: 80%;
+        color: gray;
+    }
+
+    /*  .content {
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 400px;
+        padding-bottom: 300px;
+    }*/
 }
 
 /*********************************************************************
   YOUR DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
 @media(min-width: 769px) {
+
     /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 769px or larger -- so desktop */
+    .content {
+        padding-top: 300px;
+    }
 }
 
 /*********************************************************************
@@ -206,7 +245,11 @@ figcaption {
 /*********************************************************************
   YOUR LARGE DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-@media(min-width: 1205px) {
+@media(min-width: 1500px) {
+
     /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 769px or larger -- so desktop */
-}
+    .content {
+        padding-top: 200px;
+        width: 80%;
+    }
