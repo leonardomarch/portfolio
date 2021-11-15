@@ -63,26 +63,27 @@ p {
 /** Container styles to keep content from becoming too wide or coming too close to
 * mobile edge */
 .container {
-    width: 80%;
-    max-width: 80%;
+    max-width: 100%;
     padding: 0px;
     margin: 0 auto;
+    min-width: 300px;
 }
 
 .menu {
-    max-width: 50px;
-    padding: 10px;
+    padding: 25px;
     position: fixed;
-    line-height: .75em;
+    line-height: 1em;
     font-size: 90%;
     color: #8e8a8a;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .content {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
-    padding-top: 400px;
-    padding-bottom: 300px;
+    padding-top: 175px;
+    padding-bottom: 125px;
 }
 
 /** index page photo */
@@ -221,6 +222,20 @@ figcaption {
         color: gray;
     }
 
+    .menu {
+        padding: 70px;
+        position: fixed;
+        line-height: 1.5em;
+        font-size: 1em;
+        color: #8e8a8a;
+        margin: 0 auto;
+    }
+
+    .content {
+        padding-top: 270px;
+        padding-bottom: 100px;
+    }
+
     /*  .content {
         width: 75%;
         margin: 0 auto;
@@ -237,8 +252,8 @@ figcaption {
     /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 769px or larger -- so desktop */
     .content {
-        padding-top: 300px;
-        width: 70%;
+        padding-top: 250px;
+        width: 65%;
     }
 }
 
@@ -252,6 +267,14 @@ figcaption {
     .container {
         padding: 0;
     }
+
+    .menu {
+        max-width: 100px;
+        padding: 30px;
+        line-height: 1em;
+        font-size: .85em;
+        text-align: left;
+    }
 }
 
 /*********************************************************************
@@ -263,5 +286,9 @@ figcaption {
     Note these styles will be applied to anything 769px or larger -- so desktop */
     .content {
         padding-top: 200px;
+        width: 90%;
+    }
+
+    .container {
         width: 70%;
     }
