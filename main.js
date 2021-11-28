@@ -13,3 +13,15 @@ $(() => {
 		});
 	});
 });
+
+$("body").on("hover", "div.captione", function (e) {
+	e.preventDefault();
+	$(".captione").addClass("active");
+	console.log("Im in")
+
+	$("body").on("click", ".caption.active", function (e) {
+		e.preventDefault();
+
+		$(".caption").removeClass("active");
+	});
+});
