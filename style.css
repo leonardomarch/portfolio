@@ -168,6 +168,7 @@ p {
 
 .about {
     width: 50%;
+    min-width: 49%;
     color: #696969;
     font-size: .9em;
     line-height: 1.5em;
@@ -277,6 +278,11 @@ figcaption {
 
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .content {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
     .desktop {
         display: block;
     }
@@ -309,11 +315,6 @@ figcaption {
         line-height: 1.5em;
         margin: 0 auto;
         max-width: 90%;
-    }
-
-    .content {
-        padding-top: 50px;
-        padding-bottom: 100px;
     }
 
     .description {
@@ -373,6 +374,12 @@ figcaption {
         font-size: .85em;
         text-align: left;
         position: fixed;
+    }
+
+    .content {
+        padding-top: 100px;
+        padding-bottom: 150px;
+        width: 60%;
     }
 }
 
