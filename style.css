@@ -178,6 +178,52 @@ p {
     transform: translateX(-50%) translateY(-50%);
 }
 
+/** Video stuff */
+.video {
+    position: relative;
+    margin: 0 auto;
+    height: 0;
+    padding-bottom: 56.25%;
+    transition: width 0.5s ease-in-out, right 0.5s ease-in-out, bottom 0.5s ease-in-out;
+}
+
+.video[data-id] {
+    margin-bottom: 30px;
+}
+
+.fa-arrow-circle-down {
+    font-size: 7vw;
+    z-index: 3;
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    opacity: .5;
+    height: 10px;
+    font
+}
+
+.video {
+    position: relative;
+    margin: 0 auto;
+    height: 0;
+    padding-bottom: 56.25%;
+    transition: width 0.5s ease-in-out, right 0.5s ease-in-out, bottom 0.5s ease-in-out;
+}
+
+.video[data-id] {
+    margin-bottom: 30px;
+}
+
+.video iframe, .video video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+}
+
 /** Images are allowed to be a little wider when broken out into their own container */
 figcaption {
     font-size: 6.5vw
