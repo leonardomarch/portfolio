@@ -39,7 +39,7 @@ function onYouTubeIframeAPIReady() {
 			//videoId: videoObj.data(“id”),
 			playerVars: {
 				controls: 0,
-				autoplay: 1,
+				autoplay: 0,
 				disablekb: 1,
 				enablejsapi: 1,
 				iv_load_policy: 3,
