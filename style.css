@@ -58,6 +58,7 @@ p {
     z-index: 1;
 }
 
+/** ------ defines some of the portratin in the BnP section------  */
 #portrait {
     width: 75%;
     margin: 0 auto;
@@ -72,6 +73,7 @@ p {
     padding-bottom: 100px;
 }
 
+/** -------------------------------------------------------------  */
 /** BASE CLASSES */
 /** Container styles to keep content from becoming too wide or coming too close to
 * mobile edge */
@@ -271,6 +273,37 @@ figcaption {
     border: 0;
 }
 
+/* ------ intro------ */
+.square {
+    width: 200px;
+    border: 1pt solid grey;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 1.25em;
+    border-radius: 5%;
+    line-height: 200px;
+    z-index: 1;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.square a {
+    text-decoration: none;
+}
+
+.square:hover {
+    background: red;
+    opacity: .5;
+}
+
+.content.intro {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
@@ -325,12 +358,44 @@ figcaption {
         line-height: 1.5em;
     }
 
+    /* ------------------ */
     /*  .content {
         width: 75%;
         margin: 0 auto;
         padding-top: 400px;
         padding-bottom: 300px;
     }*/
+    /* ------ intro------ */
+    .square {
+        width: 33%;
+        border: 1pt solid grey;
+        height: 200px;
+        margin: 8px;
+        flex-basis: 30%;
+        font-family: 'Roboto Slab', serif;
+        text-align: center;
+        vertical-align: middle;
+        color: white;
+        font-size: 1.15em;
+        border-radius: 5%;
+        line-height: 200px;
+        z-index: 1;
+    }
+
+    .square a {
+        background: none;
+        text-decoration: none;
+    }
+
+    .square:hover {
+        opacity: 1;
+        background: grey
+    }
+
+    .content.intro {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 /*********************************************************************
@@ -353,6 +418,10 @@ figcaption {
         margin: 0 auto;
         max-width: 80%;
         font-size: .9em;
+    }
+
+    .square {
+        font-size: 1.35em;
     }
 }
 
@@ -380,6 +449,10 @@ figcaption {
         padding-top: 100px;
         padding-bottom: 150px;
         width: 60%;
+    }
+
+    .square {
+        font-size: 1.5em;
     }
 }
 
