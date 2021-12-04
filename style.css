@@ -295,8 +295,8 @@ figcaption {
 }
 
 .square:hover {
-    background: red;
-    opacity: .5;
+    background: white;
+    opacity: .25;
 }
 
 .content.intro {
@@ -375,7 +375,7 @@ figcaption {
         font-family: 'Roboto Slab', serif;
         text-align: center;
         vertical-align: middle;
-        color: white;
+        color: grey;
         font-size: 1.15em;
         border-radius: 5%;
         line-height: 200px;
@@ -385,11 +385,6 @@ figcaption {
     .square a {
         background: none;
         text-decoration: none;
-    }
-
-    .square:hover {
-        opacity: 1;
-        background: grey
     }
 
     .content.intro {
