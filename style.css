@@ -33,6 +33,11 @@ p {
     line-height: 1.2em;
 }
 
+#myname {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+}
+
 /** Caption styles */
 .caption {
     font-size: .8rem;
@@ -77,43 +82,6 @@ p {
 /** BASE CLASSES */
 /** Container styles to keep content from becoming too wide or coming too close to
 * mobile edge */
-.description {
-    width: 85%;
-    margin: 0 auto;
-    color: #8e8a8a;
-    font-size: .9em;
-    line-height: 1.5em;
-    height: 300px;
-    overflow: auto;
-}
-
-.container {
-    max-width: 100%;
-    padding: 0px;
-    margin: 0 auto;
-    min-width: 300px;
-}
-
-.menu {
-    padding: 25px;
-    position: relative;
-    line-height: 1em;
-    font-size: 85%;
-    color: #696969;
-    margin: 0 auto;
-    text-align: center;
-    z-index: 1;
-    font-family: 'Poppins', sans-serif;
-    max-width: 90%;
-}
-
-.content {
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
-
 /** index page photo */
 .cover.text {
     display: inline-block;
@@ -148,13 +116,31 @@ p {
     object-fit: cover;
 }
 
-.arrow {
+.container {
+    max-width: 100%;
+    padding: 0px;
     margin: 0 auto;
-    text-align: center;
+    min-width: 300px;
 }
 
-.fa {
-    size: 120%;
+.menu {
+    padding: 25px;
+    position: relative;
+    line-height: 1em;
+    font-size: 1em;
+    color: #696969;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+    font-family: 'Roboto Slab', serif;
+    max-width: 90%;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .footnote {
@@ -192,18 +178,6 @@ p {
 
 .video[data-id] {
     margin-bottom: 30px;
-}
-
-.fa-arrow-circle-down {
-    font-size: 7vw;
-    z-index: 3;
-    position: sticky;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    opacity: .5;
-    height: 10px;
-    font
 }
 
 .video {
@@ -330,6 +304,7 @@ figcaption {
     .content {
         padding-top: 50px;
         padding-bottom: 100px;
+        width: 85%;
     }
 
     .desktop {
@@ -364,14 +339,6 @@ figcaption {
         line-height: 1.5em;
         margin: 0 auto;
         max-width: 90%;
-    }
-
-    .description {
-        width: 70%;
-        margin: 0 auto;
-        color: #8e8a8a;
-        font-size: .9em;
-        line-height: 1.5em;
     }
 
     /* ------------------ */
@@ -438,27 +405,30 @@ figcaption {
 /*********************************************************************
   YOUR MEDIUM-DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-@media(min-width: 805px) {
+@media(min-width: 950px) {
 
     /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 769px or larger -- so desktop */
     .container {
         padding: 0;
+        margin-left: 9%;
+        width: 90%;
     }
 
     .menu {
         max-width: 100px;
         padding: 30px;
         line-height: 1em;
-        font-size: .85em;
+        font-size: .9em;
         text-align: left;
         position: fixed;
+        font-family: 'Roboto Slab', serif;
     }
 
     .content {
-        padding-top: 100px;
+        padding-top: 40px;
         padding-bottom: 150px;
-        width: 60%;
+        width: 75%;
     }
 
     .square {
@@ -474,10 +444,10 @@ figcaption {
     /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 769px or larger -- so desktop */
     .content {
-        padding-top: 200px;
+        padding-top: 50px;
         width: 70%;
     }
 
     .container {
-        width: 70%;
+        width: 92%;
     }
