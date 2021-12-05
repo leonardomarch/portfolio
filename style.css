@@ -276,14 +276,14 @@ figcaption {
 /* ------ intro------ */
 .square {
     width: 200px;
-    border: 1pt solid grey;
+    border: 1pt solid white;
     font-family: 'Roboto Slab', serif;
     text-align: center;
     vertical-align: middle;
     color: white;
     font-size: 1.25em;
-    border-radius: 5%;
     line-height: 200px;
+    min-width: 200px;
     z-index: 1;
     margin-top: 20px;
     margin-left: auto;
@@ -297,6 +297,7 @@ figcaption {
 .square:hover {
     background: white;
     opacity: .25;
+    color: black;
 }
 
 .content.intro {
@@ -304,6 +305,21 @@ figcaption {
     flex-wrap: wrap;
 }
 
+/* ------ for the future------
+.logos {
+    float: right;
+    width: 66%;
+    z-index: 1;
+    max-width:
+}
+
+.logos img {
+    position: relative;
+    float: right;
+    width: 20px;
+    z-index: 1;
+    margin: 3px;
+}  */
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
@@ -368,16 +384,15 @@ figcaption {
     /* ------ intro------ */
     .square {
         width: 33%;
-        border: 1pt solid grey;
+        border: 1pt solid white;
         height: 200px;
         margin: 8px;
         flex-basis: 30%;
         font-family: 'Roboto Slab', serif;
         text-align: center;
         vertical-align: middle;
-        color: grey;
+        color: white;
         font-size: 1.15em;
-        border-radius: 5%;
         line-height: 200px;
         z-index: 1;
     }
