@@ -262,7 +262,7 @@ figcaption {
     text-align: center;
     vertical-align: middle;
     color: white;
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 200px;
     min-width: 200px;
     z-index: 1;
@@ -284,6 +284,11 @@ figcaption {
 .content.intro {
     display: flex;
     flex-wrap: wrap;
+}
+
+#myname b {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
 }
 
 /* ------ for the future------
