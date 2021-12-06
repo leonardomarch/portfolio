@@ -33,11 +33,6 @@ p {
     line-height: 1.2em;
 }
 
-#myname {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.5em;
-}
-
 /** Caption styles */
 .caption {
     font-size: .8rem;
@@ -143,6 +138,14 @@ p {
     padding-bottom: 100px;
 }
 
+.description {
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.5em;
+    font-size: 1em;
+    color: gray
+}
+
 .footnote {
     width: 100%;
     padding: 10px;
@@ -155,8 +158,9 @@ p {
 }
 
 .about {
-    width: 50%;
+    width: 60%;
     min-width: 49%;
+    max-width: 70%;
     color: #696969;
     font-size: .9em;
     line-height: 1.5em;
@@ -165,6 +169,9 @@ p {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    overflow: auto;
+    margin-top: 150px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /** Video stuff */
