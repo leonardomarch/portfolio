@@ -29,8 +29,54 @@ img {
     margin: 0 auto;
 }
 
+/** Menu effect */
 p {
     line-height: 1.2em;
+}
+
+li {
+    list-style-type: none;
+}
+
+.menu {
+    padding: 5px;
+    position: relative;
+    line-height: .5em;
+    font-size: .9em;
+    color: #696969;
+    z-index: 1;
+    font-family: 'Roboto Slab', serif;
+    max-width: 90%;
+    width: 58%;
+    text-align left;
+    top: 20px;
+    left: 40px;
+    transition: 1.5s;
+    height: auto;
+    width: 85px;
+}
+
+.menu.active {
+    padding: 5px;
+    position: relative;
+    line-height: .5em;
+    font-size: .9em;
+    color: #696969;
+    text-align: center;
+    z-index: 1;
+    font-family: 'Roboto Slab', serif;
+    max-width: 90%;
+    height: 30px;
+    width: 85px;
+    top: 20px;
+    left: 40px;
+    overflow: hidden;
+    text-align: left;
+    transition: 1.5s;
+}
+
+#header {
+    border: 1pt solid black;
 }
 
 /** Caption styles */
@@ -112,23 +158,10 @@ p {
 }
 
 .container {
-    max-width: 100%;
+    max-width: 90%;
     padding: 0px;
     margin: 0 auto;
     min-width: 300px;
-}
-
-.menu {
-    padding: 25px;
-    position: relative;
-    line-height: 1em;
-    font-size: 1em;
-    color: #696969;
-    margin: 0 auto;
-    text-align: center;
-    z-index: 1;
-    font-family: 'Roboto Slab', serif;
-    max-width: 90%;
 }
 
 .content {
@@ -157,6 +190,21 @@ p {
     text-align: center;
     font-size: 80%;
     color: #696969;
+}
+
+.arrowup {
+    margin: 0 auto;
+    width: 20px;
+    margin-top: 200px;
+}
+
+.fa {
+    border: 2pt solid black;
+    text-align: center;
+    font-size: 1em;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 20px;
 }
 
 .about {
@@ -357,14 +405,6 @@ figcaption {
         color: gray;
     }
 
-    .menu {
-        padding: 70px;
-        position: relative;
-        line-height: 1.5em;
-        margin: 0 auto;
-        max-width: 90%;
-    }
-
     /* ------------------ */
     /*  .content {
         width: 75%;
@@ -412,15 +452,6 @@ figcaption {
         width: 90%;
     }
 
-    .menu {
-        padding: 70px;
-        position: relative;
-        line-height: 1.5em;
-        margin: 0 auto;
-        max-width: 80%;
-        font-size: .9em;
-    }
-
     .square {
         font-size: 1.35em;
     }
@@ -439,16 +470,6 @@ figcaption {
         width: 90%;
     }
 
-    .menu {
-        max-width: 100px;
-        padding: 30px;
-        line-height: 1em;
-        font-size: .9em;
-        text-align: left;
-        position: fixed;
-        font-family: 'Roboto Slab', serif;
-    }
-
     .content {
         padding-top: 40px;
         padding-bottom: 150px;
@@ -457,6 +478,10 @@ figcaption {
 
     .square {
         font-size: 1.5em;
+    }
+
+    .menu {
+        float: left
     }
 }
 

@@ -116,3 +116,14 @@ $("body").on("click", ".fa-volume-off", function (e) {
 	}
 
 });
+
+
+$("body").on("click", ".menu", function (e) {
+
+	const this_select = e.target;
+	const choice = $(this_select);
+
+
+	$("menu").toggleClass('active');
+
+});
